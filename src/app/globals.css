@@ -5,3 +5,48 @@
 body {
   position: relative;
 }
+
+.sidebar-anim-backdrop {
+  left: 0%;
+  animation: backdrop 500ms ease-in;
+}
+
+@keyframes backdrop {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.sidebar-anim {
+  min-width: 400px;
+  animation: openSidebar 700ms ease-in;
+}
+
+@keyframes openSidebar {
+  0% {
+    opacity: 0;
+    min-width: 0px;
+  }
+  100% {
+    opacity: 1;
+    min-width: 400px;
+  }
+}
+
+.timer-anim {
+  animation: timerAnim 700ms ease-in-out;
+}
+
+@keyframes timerAnim {
+  0% {
+    opacity: 0;
+    bottom: -6rem;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}

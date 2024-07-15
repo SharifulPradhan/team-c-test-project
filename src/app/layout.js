@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
-import Sidebar from "@/components/ui/Sidebar";
+import CountdownTimer from "@/components/CountdownTimer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,11 +11,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const targetDate = new Date('2024-08-31T23:59:59');
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
         {children}
+        <CountdownTimer targetDate={targetDate} />
       </body>
     </html>
   );

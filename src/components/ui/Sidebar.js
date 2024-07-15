@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Sidebar = ({ setOpenSidebar }) => {
+const Sidebar = ({setOpenSidebar}) => {
   return (
-    <div className='h-screen'>
-      <div className='visible transition-all left-0 top-0 fixed z-10 h-full w-full bg-[#000000e6]'></div>
-      <div className='border-4 border-teal-600 w-[400px] bg-white fixed top-0 z-20 h-screen right-0'>
+    <div className='h-screen hidden md:block'>
+      <div className='visible transition-all left-0 top-0 fixed z-10 h-full w-full bg-[#000000e6] sidebar-anim-backdrop'></div>
+      <div className='min-w-full md:min-w-[400px] bg-white fixed top-0 z-20 h-screen right-0 sidebar-anim'>
         <div className='flex justify-end'>
           <span className='text-black p-5 cursor-pointer text-2xl' onClick={() => setOpenSidebar(false)}>X</span>
         </div>
