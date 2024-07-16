@@ -15,25 +15,25 @@ const Footer = () => {
             <h2 className="mb-6 text-sm font-semibold text-blue-300 uppercase dark:text-white">About Company</h2>
             <ul className="text-white dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <a href="#" className="hover:text-blue-500">Mission</a>
+                <a href="#" className="hover:text-black">Mission</a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:text-blue-500">Vision & Philosophy</a>
+                <a href="#" className="hover:text-black">Vision & Philosophy</a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:text-blue-500">Company Values</a>
+                <a href="#" className="hover:text-black">Company Values</a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:text-blue-500">Blog</a>
+                <a href="#" className="hover:text-black">Blog</a>
               </li>
             </ul>
             <h2 className="mb-6 text-sm font-semibold text-blue-300 uppercase dark:text-white">Academics</h2>
             <ul className="text-white dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <a href="#" className=" hover:text-blue-500">Curriculum</a>
+                <a href="#" className=" hover:text-black">Curriculum</a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:text-blue-500">Overview</a>
+                <a href="#" className="hover:text-black">Overview</a>
               </li>
             </ul>
           </div>
@@ -94,8 +94,8 @@ const Footer = () => {
           <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© {new Date().getFullYear()} Glenrich International School. All Rights Reserved.
           </span>
           <ul className="text-gray-500 dark:text-gray-400 font-medium flex gap-8 items-center">
-            <li><a href="#" className="hover:underline hover:text-blue-500">Terms & Conditions</a></li>
-            <li><a href="#" className="hover:underline hover:text-blue-500">Privacy Policy</a></li>
+            <li><a href="#" className="hover:underline hover:text-black">Terms & Conditions</a></li>
+            <li><a href="#" className="hover:underline hover:text-black">Privacy Policy</a></li>
           </ul>
         </div>
       </div>

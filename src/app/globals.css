@@ -50,3 +50,9 @@ body {
     bottom: 0;
   }
 }
+
+.bg-banner {
+  background-image: url(/assets/svg/day-care-hero-blobs-background.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
