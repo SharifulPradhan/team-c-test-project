@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Phone from "../../public/assets/svg/phone.svg";
-import BannerImg from '../../public/assets/images/Home-3.jpg'
-import BannerImg2 from '../../public/assets/images/Home-2-1.jpg'
+import BannerImg from '../../public/assets/images/Home-3.jpg';
+import BannerImg2 from '../../public/assets/images/Home-2-1.jpg';
+import ReverieSchool from '../../public/assets/images/Reverie-School-Students.jpg';
 
 export default function Home() {
   return (
-    <main className="h-screen flex justify-center items-center">
+    <main>
       {/* banner */}
-      <section className="bg-banner h-full w-full pt-44">
-        <div className="max-w-[1200px] mx-auto relative flex">
+      <section className="h-screen bg-banner w-full pt-44">
+        <div className="max-w-[1200px] mx-auto relative flex gap-10">
           {/* left side content */}
           <div className="md:w-1/2">
             <h6 className="tracking-[2px] leading-4 text-[#2f3c4c] text-sm font-medium">Learn. Play. Explore</h6>
@@ -35,17 +36,38 @@ export default function Home() {
           {/* right image */}
           <div className="md:w-1/2">
             <div className="relative">
-              <Image src={BannerImg} alt="" className="rounded-3xl"/>
+              <Image src={BannerImg} alt="" className="rounded-3xl" />
               <div className="absolute top-1/2 left-1/2">
-                <Image src={BannerImg2} alt="" className="rounded-3xl"/>
+                <Image src={BannerImg2} alt="" className="rounded-3xl" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      {/* about us */}
+      <section className="h-full w-full pt-44">
+        <div className="max-w-[1200px] mx-auto relative flex gap-20">
+          {/* left image */}
+          <div className="md:w-1/2">
+            <Image src={ReverieSchool} alt="" className="rounded-3xl" />
+          </div>
 
+          {/* right side content */}
+          <div className="md:w-1/2">
+            <h6 className="tracking-[2px] leading-4 text-[#2f3c4c] text-sm font-medium">About us</h6>
+            <h1 className="text-blue-500 text-6xl font-semibold tracking-[-1px] leading-[1.1em] mt-5">Reverie School is admitting students from Playgroup to Grade 7</h1>
+            <p className="text-[#566476] mt-5">Reverie School follows the Pearson Edexcel curriculum and intends to deliver excellent educational programs in the following Key Learning Areas: English, Mathematics, Science, Technology, Global Citizenship, Creative Arts, Personal Development, Health and Physical Education as well as lessons in Quran, Islamic Studies and Arabic Language classes.</p>
+
+            <p className="text-[#566476] mt-5">Here at Reverie School, we aim to help our precious children to think and act in ways that are truly inspiring.</p>
+
+            <div className="border-b pb-10 mt-5">
+              <button className="border border-[#2f3c4c] hover:bg-[#2f3c4c] py-5 px-10 rounded-[30px] text-[#2f3c4c] hover:text-white font-bold">
+                Know more about us
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
