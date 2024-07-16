@@ -3,6 +3,7 @@ import Phone from "../../public/assets/svg/phone.svg";
 import BannerImg from '../../public/assets/images/Home-3.jpg';
 import BannerImg2 from '../../public/assets/images/Home-2-1.jpg';
 import ReverieSchool from '../../public/assets/images/Reverie-School-Students.jpg';
+import { historyData } from "@/data/historyData";
 
 export default function Home() {
   return (
@@ -69,6 +70,43 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* history of school */}
+      <section className="h-full w-full py-32 history-bg relative">
+        <div className="bg-[#252D65] opacity-70 transition-all absolute w-full h-full top-0"></div>
+        <div className="max-w-[1200px] mx-auto relative">
+          <div>
+            <h2 className="text-blue-500 font-semibold">ABOUT US</h2>
+            <h2 className="text-white text-3xl font-medium">History of our school</h2>
+            <div className="mt-2">
+              <div className="max-w-14 flex">
+                <div className="w-8 h-1 bg-orange-400"></div>
+                <div className="w-8 h-1 bg-white"></div>
+              </div>
+            </div>
+          </div>
+          <div className="text-white mt-8">
+            <strong>The Averroes International School</strong> is recognized by the Bangladesh Ministry of Education and authorized by British Council and Edexcel as an English medium educational institution for both Primary and Secondary Sections. The school established in 2015 is situated at Lalmatia, Mohammadpur in Dhaka. The School, surrounded by peaceful environment, which gives pleasures to children, offers education from Play to A Level.
+            <a className="text-white" href="#"><span className="underline">Read more</span></a>
+          </div>
+
+          <div className="flex justify-between py-10">
+            {historyData.map((item, index) => {
+              return <div key={index}>
+                <Image src={item.icon} alt="" width={70} height={70} />
+                <h1 className="text-blue-500 text-[40px] font-semibold">{item.value}</h1>
+                <div className="text-white">{item.text}</div>
+              </div>
+            })}
+          </div>
+        </div>
+      </section>
+      <div className="-mt-10 relative z-10 mb-10">
+        <div className="max-w-[1200px] mx-auto flex justify-between p-8 bg-blue-500">
+          <h1 className="text-[27px] text-white font-medium">Start your Beautiful & Bright Future From Here</h1>
+          <button className="uppercase text-white rounded-3xl bg-[#252D65] py-3 px-6">Apply Now</button>
+        </div>
+      </div>
     </main>
   );
 }

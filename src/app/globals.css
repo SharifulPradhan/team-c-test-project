@@ -56,3 +56,14 @@ body {
   background-position: top right;
   background-repeat: no-repeat;
 }
+
+.history-bg {
+  background-image: url(/assets/images/history-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+svg {
+  fill: #fff;
+}
